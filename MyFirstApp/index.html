@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My First Web Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tell Tailwind to use class-based dark mode -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <h1 class="text-4xl font-extrabold text-center text-blue-600 dark:text-blue-400 my-4">
+    Hebrew Go
+  </h1>
+  <div class="max-w-4xl mx-auto min-h-screen flex flex-col p-4 space-y-4">
+    
+    <!-- Header -->
+    <header class="flex justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
+      <div class="flex items-center gap-4">
+        <button id="btnMenu" class="border border-slate-700 dark:border-white rounded px-3 py-1 lg:hidden">
+          ☰ Menu
+        </button>
+        <nav id="popUpMenu" class="hidden lg:flex gap-4">
+          <a href="#" class="text-xl font-semibold hover:underline">Home</a>
+          <a href="#" class="text-xl font-semibold hover:underline">Projects</a>
+          <a href="#" class="text-xl font-semibold hover:underline">About</a>
+          <a href="src/login.html" class="text-xl font-semibold hover:underline">Login</a>
+        </nav>
+      </div>
+      <button id="btnTheme" class="border border-slate-700 dark:border-white rounded px-3 py-1">
+        ☀️ Light
+      </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg flex flex-col justify-between">
+      <!-- Heading at the top with settings icon -->
+      <div class="relative w-full flex items-center justify-center">
+        <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+          ! היי אלחנדרו
+        </h2>
+        <button id="btnSettings" class="absolute right-0 text-gray-800 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400">
+          <img src="settings.png" alt="Settings" class="w-6 h-6">
+        </button>
+      </div>
+    
+      <!-- Writing between the heading and progress bar -->
+      <p class="text-center text-gray-700 dark:text-gray-300 mb-0.25 mt-6">
+         !ההתקדמות שלך בשלבים
+      </p>
+
+     <!-- Progress Bar with Percentage -->
+  <div class="flex items-center w-full my-4">
+    <div class="w-full bg-gray-300 dark:bg-gray-600 h-4 rounded-full">
+      <div class="bg-blue-500 h-4 rounded-full" style="width: 50%;"></div>
+    </div>
+    <span class="ml-4 text-gray-700 dark:text-gray-300 text-sm font-semibold">50%</span>
+  </div>
+
+      <!-- Combined Start Playing Button -->
+      <div class="flex justify-center items-center flex-grow">
+        <button id="btnStartPlaying" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg flex items-center space-x-4 text-2xl">
+          <span>Start Playing</span>
+          <span class="text-3xl">▶</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-300 dark:bg-slate-700 text-center p-4 rounded-lg shadow">
+      &copy; 2025 My Web App
+    </footer>
+
+  </div>
+
+  <!-- Your JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

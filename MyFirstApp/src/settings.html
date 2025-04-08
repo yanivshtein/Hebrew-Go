@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen flex items-center justify-center">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-center mb-6">Settings</h1>
+
+        <!-- Name of the Person -->
+        <div class="mb-4">
+            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+            <input type="text" id="name" value="John Doe" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <!-- Language Selection -->
+        <div class="mb-4">
+            <label for="language" class="block text-sm font-medium mb-2">Language</label>
+            <select id="language" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="en">English</option>
+                <option value="he">Hebrew</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+
+        <!-- Difficulty Level Selection -->
+        <div class="mb-4">
+            <label for="difficulty" class="block text-sm font-medium mb-2">Difficulty Level</label>
+            <select id="difficulty" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- Save Button -->
+        <div class="text-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+                Save Settings
+            </button>
+        </div>
+    </div>
+</body>
+</html>
