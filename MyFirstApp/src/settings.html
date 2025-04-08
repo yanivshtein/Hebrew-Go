@@ -12,23 +12,29 @@
         <!-- Title -->
         <h1 class="text-2xl font-bold text-center mb-6">Settings</h1>
 
-        <!-- Name of the Person -->
-        <div class="mb-4">
-            <label for="name" class="block text-sm font-medium mb-2">Name</label>
-            <input type="text" id="name" value="John Doe" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
+<!-- Name of the Person -->
+<div class="mb-4">
+    <label for="name" class="block text-sm font-medium mb-2">Name</label>
+    <input 
+        type="text" 
+        id="name" 
+        name="name"
+        placeholder="Enter your name"
+        class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+</div>
 
-        <!-- Language Selection -->
-        <div class="mb-4">
-            <label for="language" class="block text-sm font-medium mb-2">Language</label>
-            <select id="language" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="en">English</option>
-                <option value="he">Hebrew</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
-            </select>
-        </div>
+    <!-- Language Selection with Flags -->
+<div class="mb-4">
+    <label class="block text-sm font-medium mb-2">Language</label>
+    <div id="flags" class="flex gap-4">
+        <img src="https://flagcdn.com/w40/us.png" alt="USA" data-lang="us" class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
+        <img src="https://flagcdn.com/w40/es.png" alt="Spanish" data-lang="es" class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
+        <img src="https://flagcdn.com/w40/ru.png" alt="Russian" data-lang="ru" class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
 
+    </div>
+    <!-- Hidden input to hold selected language -->
+    <input type="hidden" id="language" name="language" value="en">
+</div>
         <!-- Difficulty Level Selection -->
         <div class="mb-4">
             <label for="difficulty" class="block text-sm font-medium mb-2">Difficulty Level</label>
@@ -41,10 +47,26 @@
 
         <!-- Save Button -->
         <div class="text-center">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+            <button id ="saveBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
                 Save Settings
             </button>
         </div>
     </div>
+    <script>
+        const flags = document.querySelectorAll('.flag');
+        const languageInput = document.getElementById('language');
+      
+        flags.forEach(flag => {
+          flag.addEventListener('click', () => {
+            
+            flags.forEach(f => f.classList.remove('border-blue-500'));
+            flag.classList.add('border-blue-500');
+            languageInput.value = flag.dataset.lang;
+            console.log("Selected language:", languageInput.value);
+          });
+        });
+      </script>
+      <script src="settings.js"></script>
+
 </body>
 </html>
