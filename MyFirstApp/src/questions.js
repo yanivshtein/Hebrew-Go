@@ -59,6 +59,8 @@ const questions = [
     const nextButton = document.getElementById("next-btn");
     const timerElement = document.getElementById("timer");
     const q_title = document.getElementById("counter");
+    const userDifficulty = localStorage.getItem("userDifficulty");
+    const userLang = localStorage.getItem("userLang");
     let counter = 0;
     let q;
   

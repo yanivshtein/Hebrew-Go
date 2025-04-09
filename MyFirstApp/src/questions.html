@@ -1,66 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>Tailwind Question Page</title>
+  <title>שאלון</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Optional: tell Tailwind to use class-based dark mode -->
   <script>
     tailwind.config = {
       darkMode: 'class'
-    }
+    };
   </script>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
 
-  <!-- Header (Title + Timer) -->
-  <header class="bg-blue-600 text-white p-4 flex items-center justify-between">
-    <h1 class="text-lg font-bold">התנסות</h1>
-    <div
-      id="timer"
-      class="bg-white text-blue-600 py-1 px-3 rounded shadow"
-    >
-      00:00
-    </div>
-  </header>
+  <div class="max-w-4xl mx-auto min-h-screen flex flex-col p-4 space-y-4">
+    
+    <!-- Header -->
+    <header class="flex flex-row-reverse justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
+      <h1 class="text-xl font-semibold">התנסות</h1>
+      <div id="timer" class="bg-white text-blue-600 py-1 px-3 rounded shadow dark:bg-gray-100">
+        00:00
+      </div>
+    </header>
 
-  <!-- Main Content Area -->
-  <main class="flex-grow flex flex-col items-center justify-center px-4">
-    <!-- Question Card -->
-    <div class="bg-white max-w-md w-full rounded-lg shadow-lg p-6">
-      <h2 class="text-xl font-semibold mb-4 text-center" id = "counter"></h2>
+    <!-- Main Content Area -->
+    <main class="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg flex-grow flex flex-col items-center">
+      <h2 class="text-2xl font-bold text-center mb-6" id="counter"></h2>
 
       <!-- Question Text -->
       <p class="text-base mb-6 text-center" id="question-text"></p>
 
-      <!-- Dynamic Radio Buttons Container -->
-      <div class="space-y-4 mb-6" id="answers-container"></div>
+      <!-- Dynamic Radio Buttons -->
+      <div class="space-y-4 mb-6 w-full" id="answers-container"></div>
 
-      <!-- Next Question Button -->
-      <button
-        id="next-btn"
-        class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
-      >
+      <!-- Next Button -->
+      <button id="next-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
         שאלה הבאה
       </button>
-    </div>
-  </main>
+    </main>
 
-  <!-- Footer -->
-  <footer class="p-4 flex justify-center space-x-3 bg-gray-100">
-    <button
-      class="bg-white border border-gray-300 py-2 px-4 rounded hover:bg-gray-200"
-    >
-      התקדמות
-    </button>
-  </footer>
+    <!-- Footer -->
+    <footer class="bg-slate-300 dark:bg-slate-700 text-center p-4 rounded-lg shadow">
+      <button class="bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-400 py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-gray-500">
+        התקדמות
+      </button>
+    </footer>
+  </div>
 
-  <!-- JavaScript for Timer -->
-  
-  <!-- Link to your JS that renders questions -->
+  <!-- Theme toggle logic if needed (optional) -->
+  <!-- <script>
+    // document.documentElement.classList.toggle("dark"); // For testing dark mode manually
+  </script> -->
+
+  <!-- External JS for question logic -->
   <script src="questions.js"></script>
 </body>
 </html>

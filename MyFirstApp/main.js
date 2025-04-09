@@ -28,6 +28,7 @@
     window.addEventListener("DOMContentLoaded", () => {
       const greetingEl = document.getElementById("greeting");
       const savedName = localStorage.getItem("userName");
+      
     
       if (savedName && greetingEl) {
         greetingEl.textContent = `! היי ${savedName}`;
