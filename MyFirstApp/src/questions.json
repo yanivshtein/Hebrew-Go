@@ -732,185 +732,30 @@
             "¿Cuántos años tienes?"
         ],
         "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
+        "hint": "Подумайте, где живёт человек."
       },
       {
-          "question": "Traduce: 'אני אוהב לשתות מים'",
+        "question": "Дополните предложение: אני אוהב לאכול ___",
         "answers": [
-            "Me gusta dormir",
-            "Me gusta beber agua",
-            "No quiero",
-            "Estoy leyendo"
+          "стол",
+          "яблоко",
+          "собака",
+          "машина"
         ],
         "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "¿Cómo se traduce 'שלום, מה שלומך?' al español?",
-          "answers": [
-            "Adiós",
-            "Hola, ¿cómo estás?",
-            "Gracias",
-            "Hasta luego"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "¿Qué significa 'azul'?",
-          "answers": [
-            "verde",
-            "azul",
-            "rojo",
-            "blanco"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Traduce: 'זה החתול שלי'",
-          "answers": [
-            "Este es mi perro",
-            "Esta es mi casa",
-            "Este es mi gato",
-            "Este es tu gato"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "¿Cómo se dice 'אני רוצה הביתה' en español?",
-          "answers": [
-            "Quiero pizza",
-            "Quiero ir a casa",
-            "Voy a trabajar",
-            "Quiero dormir"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Traduce: 'אני גר בירושלים'",
-          "answers": [
-            "Vivo en Tel Aviv",
-            "Soy de Haifa",
-            "Vivo en Jerusalén",
-            "Voy a la escuela"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "¿Qué significa 'frío'?",
-          "answers": [
-            "calor",
-            "lluvia",
-            "frío",
-            "sol"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
+        "hint": "Подумайте о чём-то съедобном."
       }
     ],
     "hard": [
       {
-          "question": "¿Cuál es la capital de España?",
-          "answers": [
-            "Barcelona",
-            "Madrid",
-            "Sevilla",
-            "Valencia"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Qué idioma se habla en España?",
-          "answers": [
-            "Francés",
-            "Español",
-            "Portugués",
-            "Italiano"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Qué moneda se usa en España?",
-          "answers": [
-            "Peso",
-            "Euro",
-            "Dólar",
-            "Real"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
+        "question": "Переведите это еврейское слово на русский: 'שולחן'",
+        "answer": "стол",
+        "hint": "Обычно используется для еды."
       },
       {
-          "question": "¿Qué ciudad es famosa por la Sagrada Familia?",
-          "answers": [
-            "Madrid",
-            "Barcelona",
-            "Granada",
-            "Toledo"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Qué comida es típica de España?",
-          "answers": [
-            "Pizza",
-            "Taco",
-            "Paella",
-            "Hamburguesa"
-          ],
-          "correct": 2,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Cuál es un baile tradicional español?",
-          "answers": [
-            "Samba",
-            "Flamenco",
-            "Tango",
-            "Rumba"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Qué fiesta se celebra en Pamplona con toros?",
-          "answers": [
-            "La Tomatina",
-            "San Fermín",
-            "Semana Santa",
-            "Carnaval"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Qué país está al norte de España?",
-          "answers": [
-            "Francia",
-            "Italia",
-            "Portugal",
-            "Alemania"
-          ],
-          "correct": 0,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "¿Qué colores tiene la bandera de España?",
-          "answers": [
-            "Rojo y blanco",
-            "Rojo y amarillo",
-            "Azul y blanco",
-            "Verde y rojo"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
+        "question": "Переведите эту фразу с иврита на русский: 'אני הולך לבית הספר'",
+        "answer": "Я иду в школу",
+        "hint": "Так говорит ученик."
       }
     ]
   }
