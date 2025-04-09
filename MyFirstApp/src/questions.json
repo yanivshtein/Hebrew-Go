@@ -1,0 +1,188 @@
+{
+  "us": {
+    "easy": [
+      {
+        "question": "What is the correct translation of the Hebrew word 'דלת'?",
+        "answers": [
+          "Window",
+          "Chair",
+          "Door",
+          "Book"
+        ],
+        "correct": 2,
+        "hint": "It's a basic item in a house. You use it to enter or exit a room."
+      },
+      {
+        "question": "What is the correct translation of the Hebrew word 'חתול'?",
+        "answers": [
+          "Dog",
+          "Chair",
+          "Cat",
+          "House"
+        ],
+        "correct": 2,
+        "hint": "It’s a common household pet, often likes to nap and purr."
+      }
+    ],
+    "medium": [
+      {
+        "question": "Complete the sentence: אני גר ב___",
+        "answers": [
+          "apple",
+          "book",
+          "house",
+          "cat"
+        ],
+        "correct": 2,
+        "hint": "Think about where someone lives."
+      },
+      {
+        "question": "Complete the sentence: אני אוהב לאכול ___",
+        "answers": [
+          "table",
+          "apple",
+          "dog",
+          "car"
+        ],
+        "correct": 1,
+        "hint": "Think of something you can eat."
+      }
+    ],
+    "hard": [
+      {
+        "question": "Translate this Hebrew word to English: 'שולחן'",
+        "answer": "table",
+        "hint": "You usually eat on it."
+      },
+      {
+        "question": "Translate this Hebrew phrase to English: 'אני הולך לבית הספר'",
+        "answer": "I am going to school",
+        "hint": "It’s something a student would say."
+      }
+    ]
+  },
+  "es": {
+    "easy": [
+      {
+        "question": "¿Cuál es la traducción correcta de la palabra hebrea 'דלת'?",
+        "answers": [
+          "Ventana",
+          "Silla",
+          "Puerta",
+          "Libro"
+        ],
+        "correct": 2,
+        "hint": "Es un objeto básico en una casa. Se usa para entrar o salir de una habitación."
+      },
+      {
+        "question": "¿Cuál es la traducción correcta de la palabra hebrea 'חתול'?",
+        "answers": [
+          "Perro",
+          "Silla",
+          "Gato",
+          "Casa"
+        ],
+        "correct": 2,
+        "hint": "Es una mascota común. Le gusta dormir y ronronear."
+      }
+    ],
+    "medium": [
+      {
+        "question": "Completa la frase: אני גר ב___",
+        "answers": [
+          "manzana",
+          "libro",
+          "casa",
+          "gato"
+        ],
+        "correct": 2,
+        "hint": "Piensa dónde vive una persona."
+      },
+      {
+        "question": "Completa la frase: אני אוהב לאכול ___",
+        "answers": [
+          "mesa",
+          "manzana",
+          "perro",
+          "coche"
+        ],
+        "correct": 1,
+        "hint": "Piensa en algo que se puede comer."
+      }
+    ],
+    "hard": [
+      {
+        "question": "Traduce esta palabra hebrea al español: 'שולחן'",
+        "answer": "mesa",
+        "hint": "Normalmente se usa para comer."
+      },
+      {
+        "question": "Traduce esta frase hebrea al español: 'אני הולך לבית הספר'",
+        "answer": "Estoy yendo a la escuela",
+        "hint": "Es algo que diría un estudiante."
+      }
+    ]
+  },
+  "ru": {
+    "easy": [
+      {
+        "question": "Какой правильный перевод еврейского слова 'דלת'?",
+        "answers": [
+          "Окно",
+          "Стул",
+          "Дверь",
+          "Книга"
+        ],
+        "correct": 2,
+        "hint": "Обычный предмет в доме. Используется, чтобы войти или выйти из комнаты."
+      },
+      {
+        "question": "Какой правильный перевод еврейского слова 'חתול'?",
+        "answers": [
+          "Собака",
+          "Стул",
+          "Кошка",
+          "Дом"
+        ],
+        "correct": 2,
+        "hint": "Обычное домашнее животное. Любит спать и мурлыкать."
+      }
+    ],
+    "medium": [
+      {
+        "question": "Дополните предложение: אני גר ב___",
+        "answers": [
+          "яблоко",
+          "книга",
+          "дом",
+          "кот"
+        ],
+        "correct": 2,
+        "hint": "Подумайте, где живёт человек."
+      },
+      {
+        "question": "Дополните предложение: אני אוהב לאכול ___",
+        "answers": [
+          "стол",
+          "яблоко",
+          "собака",
+          "машина"
+        ],
+        "correct": 1,
+        "hint": "Подумайте о чём-то съедобном."
+      }
+    ],
+    "hard": [
+      {
+        "question": "Переведите это еврейское слово на русский: 'שולחן'",
+        "answer": "стол",
+        "hint": "Обычно используется для еды."
+      },
+      {
+        "question": "Переведите эту фразу с иврита на русский: 'אני הולך לבית הספר'",
+        "answer": "Я иду в школу",
+        "hint": "Так говорит ученик."
+      }
+    ]
+  }
+}
