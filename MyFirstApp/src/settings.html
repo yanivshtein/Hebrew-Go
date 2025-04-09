@@ -1,72 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <title>הגדרות</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen flex items-center justify-center">
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
-        <!-- Title -->
-        <h1 class="text-2xl font-bold text-center mb-6">Settings</h1>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
 
-<!-- Name of the Person -->
-<div class="mb-4">
-    <label for="name" class="block text-sm font-medium mb-2">Name</label>
-    <input 
-        type="text" 
-        id="name" 
-        name="name"
-        placeholder="Enter your name"
-        class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-</div>
+  <div class="max-w-4xl mx-auto min-h-screen flex flex-col p-4 space-y-4">
+    
+    <!-- Header -->
+    <header class="flex flex-row-reverse justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
+      <div class="flex items-center gap-4">
+        <a href="../index.html" class="text-xl font-semibold hover:underline">חזור ←</a>
+      </div>
+      <button id="btnTheme" class="border border-slate-700 dark:border-white rounded px-3 py-1">
+        ☀️ מצב תאורה
+      </button>
+    </header>
 
-    <!-- Language Selection with Flags -->
-<div class="mb-4">
-    <label class="block text-sm font-medium mb-2">Language</label>
-    <div id="flags" class="flex gap-4">
-        <img src="https://flagcdn.com/w40/us.png" alt="USA" data-lang="us" class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
-        <img src="https://flagcdn.com/w40/es.png" alt="Spanish" data-lang="es" class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
-        <img src="https://flagcdn.com/w40/ru.png" alt="Russian" data-lang="ru" class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
+    <!-- Settings Form -->
+    <main class="bg-slate-200 dark:bg-slate-800 p-6 rounded-lg shadow text-lg">
+      <h1 class="text-2xl font-bold text-center mb-6">הגדרות</h1>
 
-    </div>
-    <!-- Hidden input to hold selected language -->
-    <input type="hidden" id="language" name="language" value="en">
-</div>
-        <!-- Difficulty Level Selection -->
-        <div class="mb-4">
-            <label for="difficulty" class="block text-sm font-medium mb-2">Difficulty Level</label>
-            <select id="difficulty" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
+      <!-- Name -->
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-medium mb-2">שם</label>
+        <input type="text" id="name" name="name" placeholder="הקלד את שמך"
+               class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-right">
+      </div>
+
+      <!-- Language with flags -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-2">שפה</label>
+        <div id="flags" class="flex gap-4 justify-start">
+          <img src="https://flagcdn.com/w40/us.png" alt="אנגלית" data-lang="us"
+               class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
+          <img src="https://flagcdn.com/w40/es.png" alt="ספרדית" data-lang="es"
+               class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
+          <img src="https://flagcdn.com/w40/ru.png" alt="רוסית" data-lang="ru"
+               class="flag w-10 h-6 cursor-pointer border-2 border-transparent hover:border-blue-500 rounded">
         </div>
+        <input type="hidden" id="language" name="language" value="us">
+      </div>
 
-        <!-- Save Button -->
-        <div class="text-center">
-            <button id ="saveBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
-                Save Settings
-            </button>
-        </div>
-    </div>
-    <script>
-        const flags = document.querySelectorAll('.flag');
-        const languageInput = document.getElementById('language');
-      
-        flags.forEach(flag => {
-          flag.addEventListener('click', () => {
-            
-            flags.forEach(f => f.classList.remove('border-blue-500'));
-            flag.classList.add('border-blue-500');
-            languageInput.value = flag.dataset.lang;
-            console.log("Selected language:", languageInput.value);
-          });
-        });
-      </script>
-      <script src="settings.js"></script>
+      <!-- Difficulty -->
+      <div class="mb-4">
+        <label for="difficulty" class="block text-sm font-medium mb-2">רמת קושי</label>
+        <select id="difficulty"
+                class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-right">
+          <option value="easy">מתחילים</option>
+          <option value="medium">בינוני</option>
+          <option value="hard">מתקדמים</option>
+        </select>
+      </div>
 
+      <!-- Save Button -->
+      <div class="text-center">
+        <button id="saveBtn"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+          שמור שינויים
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-300 dark:bg-slate-700 text-center p-4 rounded-lg shadow">
+      &copy; 2025 My Web App
+    </footer>
+  </div>
+
+  <!-- Theme toggle -->
+  <script>
+    const btnTheme = document.getElementById("btnTheme");
+    btnTheme.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      btnTheme.textContent = document.documentElement.classList.contains("dark") ? "🌙 מצב כהה" : "☀️ מצב בהיר";
+    });
+  </script>
+
+  <!-- Logic -->
+  <script src="settings.js"></script>
 </body>
 </html>
