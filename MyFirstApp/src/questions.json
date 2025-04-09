@@ -2,734 +2,160 @@
   "us": {
     "easy": [
       {
-          "question": "מה הפירוש של dog בעברית?",
+        "question": "What is the correct translation of the Hebrew word 'דלת'?",
         "answers": [
-            "שמש",
-            "שולחן",
-            "מים",
-            "כלב"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'dog'"
-        },
-        {
-          "question": "מה הפירוש של cat בעברית?",
-          "answers": [
-            "שולחן",
-            "חתול",
-            "תפוח",
-            "שמש"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'cat'"
-        },
-        {
-          "question": "מה הפירוש של house בעברית?",
-          "answers": [
-            "בית",
-            "מים",
-            "ספר",
-            "חתול"
-          ],
-          "correct": 0,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'house'"
-        },
-        {
-          "question": "מה הפירוש של car בעברית?",
-          "answers": [
-            "שולחן",
-            "שמש",
-            "בית",
-            "מכונית"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'car'"
-        },
-        {
-          "question": "מה הפירוש של book בעברית?",
-          "answers": [
-            "מכונית",
-            "בית",
-            "ספר",
-            "תפוח"
+          "Window",
+          "Chair",
+          "Door",
+          "Book"
         ],
         "correct": 2,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'book'"
+        "hint": "It's a basic item in a house. You use it to enter or exit a room."
       },
       {
-          "question": "מה הפירוש של apple בעברית?",
+        "question": " 'חתול' What is the correct translation of the Hebrew word :",
         "answers": [
-            "מכונית",
-            "תפוח",
-            "שולחן",
-            "בית"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'apple'"
-        },
-        {
-          "question": "מה הפירוש של water בעברית?",
-          "answers": [
-            "מים",
-            "שמש",
-            "שולחן",
-            "ספר"
-          ],
-          "correct": 0,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'water'"
-        },
-        {
-          "question": "מה הפירוש של sun בעברית?",
-          "answers": [
-            "מכונית",
-            "שמש",
-            "מים",
-            "ספר"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'sun'"
-        },
-        {
-          "question": "מה הפירוש של table בעברית?",
-          "answers": [
-            "שמש",
-            "בית",
-            "שולחן",
-            "מים"
+          "Dog",
+          "Chair",
+          "Cat",
+          "House"
         ],
         "correct": 2,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'table'"
+        "hint": "It’s a common household pet, often likes to nap and purr."
       }
     ],
     "medium": [
       {
-          "question": "How do you say 'I am hungry' in English?",
+        "question": "Complete the sentence: אני גר ב___",
         "answers": [
-            "I am hungry",
-            "You are tired",
-            "It is cold",
-            "We are late"
-          ],
-          "correct": 0,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "How do you say 'What is your name?' in English?",
-          "answers": [
-            "How are you?",
-            "Where are you?",
-            "What is your name?",
-            "Who are you?"
+          "apple",
+          "book",
+          "house",
+          "cat"
         ],
         "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
+        "hint": "Think about where someone lives."
       },
       {
-          "question": "Translate 'אני אוהב לשתות מים' to English.",
+        "question": "Complete the sentence: אני אוהב לאכול ___",
         "answers": [
-            "I love to eat",
-            "I love to sleep",
-            "I love to drink water",
-            "I hate water"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Translate 'שלום, מה שלומך?' to English.",
-          "answers": [
-            "Goodbye",
-            "Hello, how are you?",
-            "See you",
-            "Thank you"
+          "table",
+          "apple",
+          "dog",
+          "car"
         ],
         "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "What does 'blue' mean?",
-          "answers": [
-            "ירוק",
-            "כחול",
-            "אדום",
-            "לבן"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Translate 'זה החתול שלי' to English.",
-          "answers": [
-            "This is my dog",
-            "This is my house",
-            "This is my cat",
-            "This is your cat"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "How do you say 'I want to go home' in English?",
-          "answers": [
-            "I want pizza",
-            "I want to go home",
-            "I go to work",
-            "I want to sleep"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Translate 'אני גר בירושלים' to English.",
-          "answers": [
-            "I live in Tel Aviv",
-            "I am from Haifa",
-            "I live in Jerusalem",
-            "I go to school"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "What does 'cold' mean?",
-          "answers": [
-            "חם",
-            "גשום",
-            "קר",
-            "שמש"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
+        "hint": "Think of something you can eat."
       }
     ],
     "hard": [
       {
-          "question": "What is the capital of the United States?",
-          "answers": [
-            "New York",
-            "Washington, D.C.",
-            "Los Angeles",
-            "Chicago"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Which holiday is celebrated on the 4th of July?",
-          "answers": [
-            "Thanksgiving",
-            "Christmas",
-            "Independence Day",
-            "Labor Day"
-          ],
-          "correct": 2,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Who was the first President of the USA?",
-          "answers": [
-            "Abraham Lincoln",
-            "George Washington",
-            "John Adams",
-            "Barack Obama"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
+        "question": "Translate this Hebrew word to English: 'שולחן'",
+        "answer": "table",
+        "hint": "You usually eat on it."
       },
       {
-          "question": "What is the American currency?",
-          "answers": [
-            "Euro",
-            "Dollar",
-            "Pound",
-            "Peso"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "What sport is known as 'America's pastime'?",
-          "answers": [
-            "Soccer",
-            "Basketball",
-            "Baseball",
-            "Hockey"
-          ],
-          "correct": 2,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "In which city is the Statue of Liberty located?",
-          "answers": [
-            "Boston",
-            "New York City",
-            "Philadelphia",
-            "Miami"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Which state is the Grand Canyon in?",
-          "answers": [
-            "California",
-            "Arizona",
-            "Nevada",
-            "Utah"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Which animal is the symbol of the USA?",
-          "answers": [
-            "Eagle",
-            "Bear",
-            "Lion",
-            "Horse"
-          ],
-          "correct": 0,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "What colors are on the American flag?",
-          "answers": [
-            "Red, Blue, Green",
-            "Blue, White, Red",
-            "Red, White, Blue",
-            "Black, White, Red"
-          ],
-          "correct": 2,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
+        "question": "Translate this Hebrew phrase to English: 'אני הולך לבית הספר'",
+        "answer": "I am going to school",
+        "hint": "It’s something a student would say."
       }
     ]
   },
-    "ru": {
+  "es": {
     "easy": [
       {
-          "question": "מה הפירוש של dog בעברית?",
+        "question": "¿Cuál es la traducción correcta de la palabra hebrea 'דלת'?",
         "answers": [
-            "תפוח",
-            "שולחן",
-            "מכונית",
-            "כלב"
-        ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'dog'"
-      },
-      {
-          "question": "מה הפירוש של cat בעברית?",
-        "answers": [
-            "כלב",
-            "חתול",
-            "מכונית",
-            "מים"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'cat'"
-        },
-        {
-          "question": "מה הפירוש של house בעברית?",
-          "answers": [
-            "שמש",
-            "מים",
-            "בית",
-            "ספר"
+          "Ventana",
+          "Silla",
+          "Puerta",
+          "Libro"
         ],
         "correct": 2,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'house'"
-        },
-        {
-          "question": "מה הפירוש של car בעברית?",
-          "answers": [
-            "תפוח",
-            "מים",
-            "שולחן",
-            "מכונית"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'car'"
-        },
-        {
-          "question": "מה הפירוש של book בעברית?",
-          "answers": [
-            "מים",
-            "ספר",
-            "שמש",
-            "כלב"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'book'"
-        },
-        {
-          "question": "מה הפירוש של apple בעברית?",
-          "answers": [
-            "שמש",
-            "מים",
-            "מכונית",
-            "תפוח"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'apple'"
-        },
-        {
-          "question": "מה הפירוש של water בעברית?",
-          "answers": [
-            "בית",
-            "מים",
-            "שמש",
-            "כלב"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'water'"
-        },
-        {
-          "question": "מה הפירוש של sun בעברית?",
-          "answers": [
-            "ספר",
-            "תפוח",
-            "מכונית",
-            "שמש"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'sun'"
-        },
-        {
-          "question": "מה הפירוש של table בעברית?",
-          "answers": [
-            "מכונית",
-            "שולחן",
-            "שמש",
-            "כלב"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'table'"
+        "hint": "Es un objeto básico en una casa. Se usa para entrar o salir de una habitación."
+      },
+      {
+        "question": "¿Cuál es la traducción correcta de la palabra hebrea 'חתול'?",
+        "answers": [
+          "Perro",
+          "Silla",
+          "Gato",
+          "Casa"
+        ],
+        "correct": 2,
+        "hint": "Es una mascota común. Le gusta dormir y ronronear."
       }
     ],
     "medium": [
       {
-          "question": "Как сказать 'אני רעב' по-русски?",
+        "question": "Completa la frase: אני גר ב___",
         "answers": [
-            "Я сплю",
-            "Я голоден",
-            "Я читаю",
-            "Я дома"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Как перевести 'מה שמך?' на русский?",
-          "answers": [
-            "Кто ты?",
-            "Где ты?",
-            "Как тебя зовут?",
-            "Сколько тебе лет?"
+          "manzana",
+          "libro",
+          "casa",
+          "gato"
         ],
         "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
+        "hint": "Piensa dónde vive una persona."
       },
       {
-          "question": "Переведите: 'אני אוהב לשתות מים'",
+        "question": "Completa la frase: אני אוהב לאכול ___",
         "answers": [
-            "Я люблю спать",
-            "Я люблю пить воду",
-            "Я не хочу",
-            "Я читаю"
+          "mesa",
+          "manzana",
+          "perro",
+          "coche"
         ],
         "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Как перевести 'שלום, מה שלומך?' на русский?",
-          "answers": [
-            "Пока",
-            "Привет, как дела?",
-            "Спасибо",
-            "До завтра"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Что значит 'синий'?",
-          "answers": [
-            "зеленый",
-            "синий",
-            "красный",
-            "белый"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Переведите: 'זה החתול שלי'",
-          "answers": [
-            "Это моя собака",
-            "Это мой дом",
-            "Это мой кот",
-            "Это твоя кошка"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Как сказать 'אני רוצה הביתה' по-русски?",
-          "answers": [
-            "Я хочу пиццу",
-            "Я хочу домой",
-            "Я иду на работу",
-            "Я сплю"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Переведите: 'אני גר בירושלים'",
-          "answers": [
-            "Я живу в Тель-Авиве",
-            "Я из Хайфы",
-            "Я живу в Иерусалиме",
-            "Я учусь"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "Что значит 'холодно'?",
-          "answers": [
-            "жарко",
-            "дождливо",
-            "холодно",
-            "солнечно"
-          ],
-          "correct": 2,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
+        "hint": "Piensa en algo que se puede comer."
       }
     ],
     "hard": [
       {
-          "question": "Столица России?",
-          "answers": [
-            "Москва",
-            "Санкт-Петербург",
-            "Киев",
-            "Новосибирск"
-          ],
-          "correct": 0,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Кто был первым президентом России?",
-          "answers": [
-            "Путин",
-            "Ельцин",
-            "Горбачёв",
-            "Ленин"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Какой праздник отмечают 9 мая?",
-          "answers": [
-            "Новый год",
-            "День Победы",
-            "Рождество",
-            "1 мая"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Как называется валюта России?",
-          "answers": [
-            "Доллар",
-            "Евро",
-            "Рубль",
-            "Гривна"
-          ],
-          "correct": 2,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
+        "question": "Traduce esta palabra hebrea al español: 'שולחן'",
+        "answer": "mesa",
+        "hint": "Normalmente se usa para comer."
       },
       {
-          "question": "Какой символ у России?",
-          "answers": [
-            "Медведь",
-            "Орёл",
-            "Волк",
-            "Лев"
-          ],
-          "correct": 0,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Где находится Кремль?",
-          "answers": [
-            "Сочи",
-            "Москва",
-            "Казань",
-            "Владивосток"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Какая самая длинная река в России?",
-          "answers": [
-            "Волга",
-            "Обь",
-            "Амур",
-            "Дон"
-          ],
-          "correct": 0,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Какой город называют культурной столицей России?",
-          "answers": [
-            "Москва",
-            "Санкт-Петербург",
-            "Екатеринбург",
-            "Калининград"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
-        },
-        {
-          "question": "Что изображено на гербе России?",
-          "answers": [
-            "Медведь",
-            "Двуглавый орёл",
-            "Звезда",
-            "Флаг"
-          ],
-          "correct": 1,
-          "hint": "נסה להיזכר בידע כללי או תרבותי על המדינה או השפה"
+        "question": "Traduce esta frase hebrea al español: 'אני הולך לבית הספר'",
+        "answer": "Estoy yendo a la escuela",
+        "hint": "Es algo que diría un estudiante."
       }
     ]
   },
-    "es": {
+  "ru": {
     "easy": [
       {
-          "question": "מה הפירוש של dog בעברית?",
+        "question": "Какой правильный перевод еврейского слова 'דלת'?",
         "answers": [
-            "שמש",
-            "תפוח",
-            "שולחן",
-            "כלב"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'dog'"
-        },
-        {
-          "question": "מה הפירוש של cat בעברית?",
-          "answers": [
-            "כלב",
-            "מים",
-            "שמש",
-            "חתול"
-          ],
-          "correct": 3,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'cat'"
-        },
-        {
-          "question": "מה הפירוש של house בעברית?",
-          "answers": [
-            "בית",
-            "ספר",
-            "מכונית",
-            "כלב"
-          ],
-          "correct": 0,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'house'"
-        },
-        {
-          "question": "מה הפירוש של car בעברית?",
-          "answers": [
-            "מים",
-            "בית",
-            "מכונית",
-            "תפוח"
+          "Окно",
+          "Стул",
+          "Дверь",
+          "Книга"
         ],
         "correct": 2,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'car'"
+        "hint": "Обычный предмет в доме. Используется, чтобы войти или выйти из комнаты."
       },
       {
-          "question": "מה הפירוש של book בעברית?",
+        "question": "Какой правильный перевод еврейского слова 'חתול'?",
         "answers": [
-            "מכונית",
-            "ספר",
-            "שולחן",
-            "חתול"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'book'"
-        },
-        {
-          "question": "מה הפירוש של apple בעברית?",
-          "answers": [
-            "חתול",
-            "כלב",
-            "תפוח",
-            "ספר"
+          "Собака",
+          "Стул",
+          "Кошка",
+          "Дом"
         ],
         "correct": 2,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'apple'"
-        },
-        {
-          "question": "מה הפירוש של water בעברית?",
-          "answers": [
-            "שמש",
-            "מים",
-            "כלב",
-            "שולחן"
-          ],
-          "correct": 1,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'water'"
-        },
-        {
-          "question": "מה הפירוש של sun בעברית?",
-          "answers": [
-            "שמש",
-            "ספר",
-            "מים",
-            "תפוח"
-          ],
-          "correct": 0,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'sun'"
-        },
-        {
-          "question": "מה הפירוש של table בעברית?",
-          "answers": [
-            "שולחן",
-            "מכונית",
-            "כלב",
-            "חתול"
-          ],
-          "correct": 0,
-          "hint": "המילה מתארת משהו בסיסי בשפה היומיומית. תחשוב מה זה 'table'"
+        "hint": "Обычное домашнее животное. Любит спать и мурлыкать."
       }
     ],
     "medium": [
       {
-          "question": "¿Cómo se dice 'אני רעב' en español?",
+        "question": "Дополните предложение: אני גר ב___",
         "answers": [
-            "Tengo sueño",
-            "Tengo hambre",
-            "Estoy leyendo",
-            "Estoy en casa"
-          ],
-          "correct": 1,
-          "hint": "המשפט מתאר מצב יומיומי. תחשוב מה אומרים במצב כזה"
-        },
-        {
-          "question": "¿Cómo se traduce 'מה שמך?' al español?",
-          "answers": [
-            "¿Quién eres?",
-            "¿Dónde estás?",
-            "¿Cómo te llamas?",
-            "¿Cuántos años tienes?"
+          "яблоко",
+          "книга",
+          "дом",
+          "кот"
         ],
         "correct": 2,
         "hint": "Подумайте, где живёт человек."
