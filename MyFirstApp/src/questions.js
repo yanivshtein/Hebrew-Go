@@ -1,20 +1,48 @@
 const questions = [
-    {
-      text: "?איזה חג חוגגים בחודש תשרי",
-      answers: ["ראש השנה", "שבועות", "פסח", "פורים"],
-      correctIndex: 0,
-    },
-    {
-      text: "What color is the sky?",
-      answers: ["Blue", "Green", "Yellow", "Pink"],
-      correctIndex: 0,
-    },
-    {
-      text: "How many days are in a week?",
-      answers: ["5", "6", "7", "8"],
-      correctIndex: 2,
-    },
-  ];
+  {
+    text: "?איזה חג חוגגים בחודש תשרי",
+    answers: ["ראש השנה", "שבועות", "פסח", "פורים"],
+    correctIndex: 0,
+    hint: "בתחילת השנה"
+  },
+  {
+    text: "?מהי עיר הבירה של ישראל",
+    answers: ["תל אביב", "ירושלים", "חיפה", "באר שבע"],
+    correctIndex: 1,
+    hint: "עיר עם הרבה היסטוריה ודתות"
+  },
+  {
+    text: "?מהו ההר הגבוה ביותר בישראל",
+    answers: ["הר מירון", "הר הכרמל", "הר החרמון", "הר תבור"],
+    correctIndex: 2,
+    hint: "יש בו גם אתר סקי"
+  },
+  {
+    text: "?באיזו עיר נמצא שוק מחנה יהודה",
+    answers: ["תל אביב", "ירושלים", "אשדוד", "נתניה"],
+    correctIndex: 1,
+    hint: "העיר עם הכותל"
+  },
+  {
+    text: "?איזה ים נמצא בדרום הארץ",
+    answers: ["ים התיכון", "ים המלח", "ים סוף", "הים האדום"],
+    correctIndex: 2,
+    hint: "נמצא ליד אילת"
+  },
+  {
+    text: "?מה פירוש הביטוי בסלנג 'חבל על הזמן'",
+    answers: ["בבקשה", "תודה", "שבת", "שלום"],
+    correctIndex: 3,
+    hint: "גם ברכה וגם פרידה"
+  },
+  {
+    text: "?מהי צורת הרבים של המילה 'ספר'",
+    answers: ["ספרות", "ספרים", "ספריות", "ספורים"],
+    correctIndex: 1,
+    hint: "יש לי הרבה כאלה במדף"
+  }
+];
+
   
   // פונקציה שמחזירה אינדקס רנדומלי
   function getRandomIndex() {
@@ -32,10 +60,11 @@ const questions = [
     const timerElement = document.getElementById("timer");
     const q_title = document.getElementById("counter");
     let counter = 0;
+    let q;
   
     function renderQuestion(index) {
       counter++;
-      const q = questions[index];
+      q = questions[index];
   
       q_title.textContent = "שאלה מספר " + counter;
       questionTextEl.textContent = q.text;
@@ -74,11 +103,15 @@ const questions = [
     function updateTimer() {
       time--;
       if (time === 10) {
-        alert("קח רמז - על חשבון משרד הקליטה");
+        alert(`קח רמז על חשבון משרד הקליטה : ${q.hint}`);
       }
       else if (time==0){
         clearInterval(timerInterval);
         alert("Time's Up!")
+        currentQuestionIndex = getUniqueRandomIndex();
+        renderQuestion(currentQuestionIndex);
+        time = 30;
+        timerInterval = setInterval(updateTimer, 1000);
       }
       const minutes = String(Math.floor(time / 60)).padStart(2, "0");
       const seconds = String(time % 60).padStart(2, "0");
@@ -89,8 +122,9 @@ const questions = [
     // Random index
     function getUniqueRandomIndex() {
       if (seen.size === questions.length) {
-        alert("כל השאלות הוצגו! מתחילים מחדש.");
+        alert("נגמר המשחק");
         seen.clear();
+        window.location.href = "endGame.html";
       }
   
       let randIndex = getRandomIndex();
@@ -104,6 +138,25 @@ const questions = [
   
     // כפתור "שאלה הבאה"
     nextButton.addEventListener("click", () => {
+      const selectedInput = document.querySelector('input[name="quizAnswer"]:checked');
+  
+      if (selectedInput) {
+        const selectedIndex = parseInt(selectedInput.value);
+        const isCorrect = selectedIndex === questions[currentQuestionIndex].correctIndex;
+
+        if (isCorrect){
+          alert("תשובה נכונה")
+        }
+        else{
+          alert("תשובה שגויה")
+        }
+      }
+      // עצירת הטיימר הקודם
+      clearInterval(timerInterval);
+
+      // התחלה מחדש
+      time = 30;
+      timerInterval = setInterval(updateTimer, 1000);
       currentQuestionIndex = getUniqueRandomIndex();
       renderQuestion(currentQuestionIndex);
     });
