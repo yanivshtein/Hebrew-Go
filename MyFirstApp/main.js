@@ -13,6 +13,15 @@ const btnTheme = document.getElementById("btnTheme");
       const savedName = localStorage.getItem("userName");
 
       if (savedName && greetingEl) {
-        greetingEl.textContent = ! היי ${savedName};
+        greetingEl.textContent = `! היי ${savedName}`;
       }
     });
+
+    window.onload = () => {
+      const greetingEl = document.getElementById("greeting");
+      const savedName = localStorage.getItem("userName");
+
+      if (savedName && greetingEl) {
+        greetingEl.textContent = `! היי ${savedName}`;
+      }
+    }
