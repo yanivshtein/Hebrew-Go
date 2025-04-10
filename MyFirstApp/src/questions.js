@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const userDifficulty = localStorage.getItem("userDifficulty");
   const userLang = localStorage.getItem("userLang");
 
-  alert(userDifficulty);
 
   // פונקציה שמחזירה אינדקס רנדומלי
   function getRandomIndex() {
