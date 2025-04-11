@@ -13,6 +13,5 @@ const btnTheme = document.getElementById("btnTheme");
       const savedName = localStorage.getItem("userName");
 
       if (savedName && greetingEl) {
-        greetingEl.textContent = ! היי ${savedName};
       }
     });
