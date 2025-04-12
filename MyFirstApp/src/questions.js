@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuestionIndex = 0;
   let seen = new Set();
   let counter = 0;
+  let falafelBalls = 0; // Track falafel balls earned
   let q;
+  let timerInterval;
+  const falafelEmoji = "🧆"; // אימוג'י של פלאפל
 
   const questionTextEl = document.getElementById("question-text");
   const answersContainerEl = document.getElementById("answers-container");
@@ -13,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const userDifficulty = localStorage.getItem("userDifficulty");
   const userLang = localStorage.getItem("userLang");
 
-
   // פונקציה שמחזירה אינדקס רנדומלי
   function getRandomIndex() {
     return Math.floor(Math.random() * questions.length);
@@ -21,11 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getUniqueRandomIndex() {
     if (seen.size === questions.length) {
-      alert("נגמר המשחק");
-      seen.clear();
-      window.location.href = "endGame.html";
+      clearInterval(timerInterval);
+      const finalMessage = `המשחק נגמר! צברת סה"כ ${falafelBalls} כדורי פלאפל! ${falafelEmoji}\nהאם תרצה להתחיל מחדש?\nבחר 'Cancel' כדי לחזור לדף הבית.`;
+      const restart = confirm(finalMessage);
+    
+      if (restart) {
+        startNewGame();
+      } else {
+        window.location.href = "../index.html";
+      }
+      return null; // Return null to indicate game ended
     }
-
+    
     let randIndex = getRandomIndex();
     while (seen.has(randIndex)) {
       randIndex = getRandomIndex();
@@ -34,9 +43,25 @@ document.addEventListener("DOMContentLoaded", () => {
     seen.add(randIndex);
     return randIndex;
   }
+  
+  function startNewGame() {
+    seen.clear();
+    counter = 0; // Reset counter to 0
+    falafelBalls = 0; // Reset falafel balls
+    time = 30;
+    clearInterval(timerInterval);
+    
+    // Get new random question
+    const newIndex = getUniqueRandomIndex();
+    if (newIndex !== null) { // Only proceed if we got a valid index
+      currentQuestionIndex = newIndex;
+      renderQuestion(currentQuestionIndex);
+      timerInterval = setInterval(updateTimer, 1000);
+    }
+  }
 
   function renderQuestion(index) {
-    counter++;
+    counter++; // Increment counter before displaying
     q = questions[index];
 
     q_title.textContent = "שאלה מספר " + counter;
@@ -76,10 +101,13 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (time == 0) {
       clearInterval(timerInterval);
       alert("Time's Up!");
-      currentQuestionIndex = getUniqueRandomIndex();
-      renderQuestion(currentQuestionIndex);
-      time = 30;
-      timerInterval = setInterval(updateTimer, 1000);
+      const newIndex = getUniqueRandomIndex();
+      if (newIndex !== null) {
+        currentQuestionIndex = newIndex;
+        renderQuestion(currentQuestionIndex);
+        time = 30;
+        timerInterval = setInterval(updateTimer, 1000);
+      }
     }
 
     const minutes = String(Math.floor(time / 60)).padStart(2, "0");
@@ -87,22 +115,22 @@ document.addEventListener("DOMContentLoaded", () => {
     timerElement.textContent = `${minutes}:${seconds}`;
   }
 
-  let timerInterval;
-
-  //calculate percentage of right answers
-  nextButton.addEventListener("click", () => {
+  // Set up next button handler
+  nextButton.addEventListener("click", handleNextButtonClick);
+  
+  function handleNextButtonClick() {
     const selectedInput = document.querySelector('input[name="quizAnswer"]:checked');
     if (selectedInput) {
       const selectedIndex = parseInt(selectedInput.value);
       const isCorrect = selectedIndex === q.correct;
 
       if (isCorrect) {
-        alert("תשובה נכונה");
+        falafelBalls++; // Increment falafel balls
+        alert(`תשובה נכונה! צברת ${falafelBalls} כדורי פלאפל! ${falafelEmoji}`);
         //saves progress
         let correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
         correctAnswers += 1;
         localStorage.setItem("correctAnswers", correctAnswers.toString());
-        
       } else {
         alert("תשובה שגויה");
       }
@@ -110,17 +138,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     clearInterval(timerInterval);
     time = 30;
-    timerInterval = setInterval(updateTimer, 1000);
-    currentQuestionIndex = getUniqueRandomIndex();
-    renderQuestion(currentQuestionIndex);
-  });
+    
+    const newIndex = getUniqueRandomIndex();
+    if (newIndex !== null) {
+      currentQuestionIndex = newIndex;
+      renderQuestion(currentQuestionIndex);
+      timerInterval = setInterval(updateTimer, 1000);
+    }
+  }
 
+  // Initialize the game
   fetch('questions.json')
     .then(res => res.json())
     .then(data => {
-      questions = data[userLang][userDifficulty]; // ✅ עכשיו מאתחל את המשתנה הגלובלי
-      currentQuestionIndex = getUniqueRandomIndex();
-      renderQuestion(currentQuestionIndex);
-      timerInterval = setInterval(updateTimer, 1000);
+      questions = data[userLang][userDifficulty];
+      const newIndex = getUniqueRandomIndex();
+      if (newIndex !== null) {
+        currentQuestionIndex = newIndex;
+        renderQuestion(currentQuestionIndex);
+        timerInterval = setInterval(updateTimer, 1000);
+      }
     });
 });
