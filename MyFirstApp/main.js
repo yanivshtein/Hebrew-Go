@@ -3,6 +3,20 @@ const btnTheme = document.getElementById("btnTheme");
     const popUpMenu = document.getElementById("popUpMenu");
     const root = document.documentElement;
 
+    // Progress bar calculation based of correct answers
+    document.addEventListener("DOMContentLoaded", () => {
+      const progressBar = document.getElementById("progressBar");
+      const progressText = document.getElementById("progressText");
+    
+      const totalQuestions = 18; // fake number of questions
+      const correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
+    
+      const progress = Math.round((correctAnswers / totalQuestions) * 100);
+    
+      progressBar.style.width = `${progress}%`;
+      progressText.textContent = `${progress}%`;
+    });
+
 
     // Menu toggle
     btnMenu?.addEventListener("click", () => {
@@ -13,5 +27,6 @@ const btnTheme = document.getElementById("btnTheme");
       const savedName = localStorage.getItem("userName");
 
       if (savedName && greetingEl) {
+        greetingEl.textContent = `היי ${savedName}`;
       }
     });

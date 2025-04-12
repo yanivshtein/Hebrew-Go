@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let timerInterval;
 
+  //calculate percentage of right answers
   nextButton.addEventListener("click", () => {
     const selectedInput = document.querySelector('input[name="quizAnswer"]:checked');
     if (selectedInput) {
@@ -97,6 +98,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (isCorrect) {
         alert("תשובה נכונה");
+        //saves progress
+        let correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
+        correctAnswers += 1;
+        localStorage.setItem("correctAnswers", correctAnswers.toString());
+        
       } else {
         alert("תשובה שגויה");
       }
