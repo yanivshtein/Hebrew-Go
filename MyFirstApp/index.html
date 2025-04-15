@@ -25,6 +25,17 @@
     
     <!-- Header -->
     <header class="flex justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
+      <div class="flex items-center gap-4">
+        <button id="btnMenu" class="border border-slate-700 dark:border-white rounded px-3 py-1 lg:hidden">
+          ☰ Menu
+        </button>
+        <nav id="popUpMenu" class="hidden lg:flex gap-4">
+          <a href="#" class="text-xl font-semibold hover:underline">Home</a>
+          <a href="#" class="text-xl font-semibold hover:underline">Projects</a>
+          <a href="#" class="text-xl font-semibold hover:underline">About</a>
+          <a href="src/login.html" class="text-xl font-semibold hover:underline">Login</a>
+        </nav>
+      </div>
       <button id="btnTheme" class="ml-auto border border-slate-700 dark:border-white rounded px-3 py-1">
         🌙 מצב כהה
       </button>

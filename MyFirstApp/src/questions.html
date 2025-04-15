@@ -17,7 +17,7 @@
     
     <!-- Header -->
     <header class="flex flex-row-reverse justify-between items-center bg-slate-300 dark:bg-slate-700 p-4 rounded-lg shadow">
-      <h1 class="text-xl font-semibold">התנסות</h1>
+      <a href="../index.html" class="text-xl font-semibold hover:underline">חזרה לעמוד ראשי ←</a>
       <div id="timer" class="bg-white text-blue-600 py-1 px-3 rounded shadow dark:bg-gray-100">
         00:00
       </div>
@@ -33,10 +33,19 @@
       <!-- Dynamic Radio Buttons -->
       <div class="space-y-4 mb-6 w-full" id="answers-container"></div>
 
-      <!-- Next Button -->
-      <button id="next-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
-        שאלה הבאה
-      </button>
+      <div class="flex flex-col items-center w-full space-y-4">
+        <!-- Hint Button -->
+        <div class="self-start">
+          <button id="hint-btn" class="flex items-center bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg transition">
+            💡 קבל רמז
+          </button>
+        </div>
+      
+        <!-- Next Button -->
+        <button id="next-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition shadow-lg">
+          שאלה הבאה
+        </button>
+      </div>
     </main>
 
     <!-- Footer -->

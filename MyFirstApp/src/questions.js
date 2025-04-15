@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const userDifficulty = localStorage.getItem("userDifficulty");
   const userLang = localStorage.getItem("userLang");
 
+  const hintButton = document.getElementById("hint-btn");
+    hintButton.addEventListener("click", useHint);
   // פונקציה שמחזירה אינדקס רנדומלי
   function getRandomIndex() {
     return Math.floor(Math.random() * questions.length);
@@ -159,4 +161,35 @@ document.addEventListener("DOMContentLoaded", () => {
         timerInterval = setInterval(updateTimer, 1000);
       }
     });
+
+
+
+
+
+    function useHint() {
+      const radioButtons = document.querySelectorAll('input[name="quizAnswer"]');
+      const incorrectIndexes = [];
+    
+      // Collect indexes of incorrect answers
+      radioButtons.forEach((radio, index) => {
+        if (index !== q.correct) {
+          incorrectIndexes.push(index);
+        }
+      });
+    
+      // Randomly select two incorrect answers to gray out
+      while (incorrectIndexes.length > 2) {
+        incorrectIndexes.splice(Math.floor(Math.random() * incorrectIndexes.length), 1);
+      }
+    
+      // Gray out the selected incorrect answers
+      incorrectIndexes.forEach(index => {
+        const label = radioButtons[index].parentElement;
+        label.style.opacity = "0.5"; // Gray out the label
+        radioButtons[index].disabled = true; // Disable the radio button
+      });
+    
+      // Disable the hint button after use
+      document.getElementById("hint-btn").disabled = true;
+    }
 });
